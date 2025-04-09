@@ -23,7 +23,8 @@ export default function Footer() {
             className="text-green-300 underline"
           >
             Facebook
-          </a>.
+          </a>
+          .
         </p>
       </div>
     </footer>
