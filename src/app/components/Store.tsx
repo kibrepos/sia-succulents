@@ -5,7 +5,6 @@ export default function Store() {
     { id: 3, name: "Jade Plant", price: "$15", image: "/images/jade-plant.jpg" },
     { id: 4, name: "Snake Plant", price: "$18", image: "/images/snake-plant.jpg" },
   ];
-//test
   return (
     <section className="bg-white py-12 px-6 md:px-12">
       <div className="max-w-6xl mx-auto">
