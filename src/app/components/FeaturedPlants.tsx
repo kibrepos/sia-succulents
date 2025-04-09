@@ -14,6 +14,27 @@ const featuredPlants = [
         image: "/fiddle-leaf-fig.jpg",
         description: "Fiddle Leaf Fig is a popular houseplant known for its large, violin-shaped leaves.",
     },
+
+    {
+        id: 3,
+        name: "Fiddle Leaf Fig",
+        image: "/fiddle-leaf-fig.jpg",
+        description: "Fiddle Leaf Fig is a popular houseplant known for its large, violin-shaped leaves.",
+    },
+
+    {
+        id: 4,
+        name: "Fiddle Leaf Fig",
+        image: "/fiddle-leaf-fig.jpg",
+        description: "Fiddle Leaf Fig is a popular houseplant known for its large, violin-shaped leaves.",
+    },
+
+    {
+        id: 5,
+        name: "Fiddle Leaf Fig",
+        image: "/fiddle-leaf-fig.jpg",
+        description: "Fiddle Leaf Fig is a popular houseplant known for its large, violin-shaped leaves.",
+    },
 ];
 
 export default function FeaturedPlants() {
