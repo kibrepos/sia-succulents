@@ -1,6 +1,7 @@
 import FeaturedPlants from "./components/FeaturedPlants";
 import Header from "./components/Header";
 import MainBanner from "./components/MainBanner";
+import About from "./components/About";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <main>
         <MainBanner />
         <FeaturedPlants />
+        <About />
       </main>
     </div>
   );
