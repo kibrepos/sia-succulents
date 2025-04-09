@@ -53,20 +53,6 @@ const featuredPlants = [
 export default function FeaturedPlants() {
   return (
     <>
-      <Head>
-        <title>Featured Plants | Sia Succulents</title>
-        <meta
-          name="description"
-          content="Discover our featured plants, including Monstera and Fiddle Leaf Fig, perfect for your home or office."
-        />
-        <meta property="og:title" content="Featured Plants | Sia Succulents" />
-        <meta
-          property="og:description"
-          content="Explore our collection of featured plants, including Monstera and Fiddle Leaf Fig."
-        />
-        <meta property="og:image" content="/monstera.jpg" />
-        <meta property="og:type" content="website" />
-      </Head>
       <section>
         <noscript>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
