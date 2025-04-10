@@ -15,7 +15,7 @@ export default function Home() {
         <MainBanner />
         <FeaturedPlants />
         <About />
-        <Store /> {/* Add the Store section here */}
+        <Store />
         <Maps />
         <Contacts />
       </main>
