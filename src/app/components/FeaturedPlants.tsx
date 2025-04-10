@@ -2,11 +2,6 @@
 
 import Image from "next/image";
 import Head from "next/head";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 const featuredPlants = [
   {
@@ -70,34 +65,37 @@ export default function FeaturedPlants() {
             ))}
           </div>
         </noscript>
-        <Swiper
-          modules={[Navigation, Pagination, Autoplay]}
-          navigation
-          pagination={{ clickable: true }}
-          autoplay={{ delay: 3000 }}
-          loop={true} // Enable looping
-          spaceBetween={16}
-          slidesPerView={1}
-          breakpoints={{
-            640: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
-          }}
-        >
-          {featuredPlants.map((plant) => (
-            <SwiperSlide key={plant.id}>
-              <div className="flex flex-col gap-4">
-                <Image
-                  src={plant.image}
-                  alt={plant.name}
-                  width={400}
-                  height={400}
-                />
-                <h2 className="text-2xl font-semibold">{plant.name}</h2>
-                <p>{plant.description}</p>
+        <div className="relative">
+          <div className="flex overflow-x-scroll snap-x snap-mandatory scrollbar-hide">
+            {featuredPlants.map((plant) => (
+              <div
+                key={plant.id}
+                className="flex-shrink-0 w-full snap-center px-4 sm:w-1/2 lg:w-1/3"
+              >
+                <div className="flex flex-col gap-4">
+                  <Image
+                    src={plant.image}
+                    alt={plant.name}
+                    width={400}
+                    height={400}
+                  />
+                  <h2 className="text-2xl font-semibold">{plant.name}</h2>
+                  <p>{plant.description}</p>
+                </div>
               </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+            ))}
+          </div>
+          <div className="absolute inset-y-0 left-0 flex items-center">
+            <button className="p-2 bg-gray-800 text-white rounded-full">
+              &#8249;
+            </button>
+          </div>
+          <div className="absolute inset-y-0 right-0 flex items-center">
+            <button className="p-2 bg-gray-800 text-white rounded-full">
+              &#8250;
+            </button>
+          </div>
+        </div>
       </section>
     </>
   );
